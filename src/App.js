@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import Main from './components/Main';
 import Header from './components/Header';
-// import About from './components/About';
-// import Projects from './components/Projects';
-// import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
@@ -12,23 +9,23 @@ function App() {
 
 	const [pages] = useState([
 		{
-			name: 'about-me'			
+			name: 'About Me'			
 		},
 		{
-			name: 'portfolio'			
+			name: 'Portfolio'			
 		},
 		{
-			name: 'contact'			
+			name: 'Contact'			
 		},
 		{
-			name: 'resume'			
+			name: 'Resume'			
 		}
 	]);
 
 	const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div>
+    <div className='container'>
 			<Header pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
 			<Main currentPage={currentPage}/>
 			<Footer />

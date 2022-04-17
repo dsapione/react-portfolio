@@ -6,24 +6,21 @@ console.log(props)
 const setCurrentPage = props.setCurrentPage
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-					Daniel Sapione
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          {props.pages.map(page => (
-						<li key={page.name}>
-							<button onClick={() => setCurrentPage(page)}>
-								{page.name}
-							</button>
-						</li>
+		<header class="navbar">
+			<section class="navbar-section">
+				<a href="#" class="btn btn-link">Daniel Sapione</a>
+			</section>
+			<section class="navbar-center">
+				{/* <!-- centered logo or brand --> */}
+			</section>
+			<section class="navbar-section">
+					{props.pages.map(page => (							
+						<a href='#' key={page.name} class="btn btn-link" onClick={() => setCurrentPage(page)}>
+							{page.name}
+						</a>
 					))}
-        </ul>
-      </nav>
-    </header>
+			</section>
+		</header>
   );
 }
 
