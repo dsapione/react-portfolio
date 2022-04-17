@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaGithub } from 'react-icons/fa'
 
 
 function Footer() {
@@ -7,7 +7,7 @@ function Footer() {
 
   return (
 		<footer>
-			<FontAwesomeIcon icon="fa-brands fa-github" />
+			<FaGithub/>
 		</footer> 
   );
 }
