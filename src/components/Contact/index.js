@@ -37,7 +37,7 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section className='container'>
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className='mb-3'>
@@ -57,7 +57,9 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className='btn-lg btn-outline-secondary' data-testid="button" type="submit">Submit</button>
+				<div className="d-grid gap-2 col-6 mx-auto">
+        	<button className='btn-lg btn-primary' data-testid="button" type="submit">Submit</button>
+				</div>
       </form>
     </section>
   );
