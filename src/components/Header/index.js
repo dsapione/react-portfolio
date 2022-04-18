@@ -1,25 +1,24 @@
 import React from 'react';
 
 function Header(props) {
-console.log(props)
+	console.log(props)
 
-const setCurrentPage = props.setCurrentPage
+	const setCurrentPage = props.setCurrentPage
 
   return (
-		<header class="navbar">
-			<section class="navbar-section">
-				<a href="#" class="btn btn-link">Daniel Sapione</a>
-			</section>
-			<section class="navbar-center">
-				{/* <!-- centered logo or brand --> */}
-			</section>
-			<section class="navbar-section">
-					{props.pages.map(page => (							
-						<a href='#' key={page.name} class="btn btn-link" onClick={() => setCurrentPage(page)}>
+		<header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span className="fs-4">Daniel Sapione</span>
+      </a>
+			<ul className="nav nav-pills">
+				{props.pages.map(page => (
+					<li className="nav-item">							
+						<a href='#' key={page.name} className="nav-link px-3 text-white" onClick={() => setCurrentPage(page)}>
 							{page.name}
 						</a>
-					))}
-			</section>
+					</li>
+				))}
+			</ul>	
 		</header>
   );
 }
