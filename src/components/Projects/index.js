@@ -47,26 +47,29 @@ function Projects() {
   ]);
 
   return (
-		<div className="row row-cols-1 row-cols-md-2 g-4">
-			{photos.map((image) => (
-				<div className="col">
-					<div className="card">
-						<a href={image.link} target="blank">
-							<img
-								src={require(`../../assets/projects/${image.path}.jpg`)}
-								alt={image.description}
-								width='250px'
-								className="card-img-top"
-								key={image.description}
-							/>
-							<div className="card-body">
-								<h5 className="card-title text-center text-dark">{image.name}</h5>
-							</div>
-						</a>
-					</div>
-				</div> 
-			))} 
-		</div>
+		<section>
+			<h1 data-testid="h1tag">Projects</h1>
+			<div className="row row-cols-1 row-cols-md-2 g-4">
+				{photos.map((image) => (
+					<div className="col">
+						<div className="card">
+							<a href={image.link} target="blank">
+								<img
+									src={require(`../../assets/projects/${image.path}.jpg`)}
+									alt={image.description}
+									width='250px'
+									className="card-img-top"
+									key={image.description}
+								/>
+								<div className="card-body">
+									<h5 className="card-title text-center text-dark">{image.name}</h5>
+								</div>
+							</a>
+						</div>
+					</div> 
+				))} 
+			</div>
+		</section>
   );
 }
 
