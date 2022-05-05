@@ -43,6 +43,12 @@ function Projects() {
 			description: 'screenshot of XYZ Rentals website',
       path: 'xyz-rentals',
 			link: 'https://secret-savannah-63468.herokuapp.com'
+    },
+		{
+      name: 'Coast2Coast',
+			description: 'screenshot of Coast2Coast website',
+      path: 'coast2coast',
+			link: 'https://coast-2-coast.herokuapp.com'
     }
   ]);
 
