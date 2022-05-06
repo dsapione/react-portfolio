@@ -3,12 +3,6 @@ import React, { useState } from 'react';
 function Projects() {
 	const [photos] = useState([
     {
-      name: 'Horiseon',
-			description: 'screenshot of Horiseon website',
-      path: 'horiseon',
-			link: 'https://dsapione.github.io/Horiseon-refractor'
-    },
-    {
       name: 'Hourly Organizer',
 			description: 'screenshot of Hourly Organizer website',
       path: 'hourly-organizer',
