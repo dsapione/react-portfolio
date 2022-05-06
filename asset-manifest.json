@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.68645457.css",
-    "main.js": "/react-portfolio/static/js/main.5fef5e22.js",
+    "main.js": "/react-portfolio/static/js/main.4e087297.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/portrait.jpg": "/react-portfolio/static/media/portrait.1121b6e4fb6daa59e0e2.jpg",
     "static/media/xyz-rentals.jpg": "/react-portfolio/static/media/xyz-rentals.fc0b96b40d58ba064c88.jpg",
@@ -12,13 +12,14 @@
     "static/media/hourly-organizer.jpg": "/react-portfolio/static/media/hourly-organizer.6566e516d7ed8f446a9c.jpg",
     "static/media/resume.pdf": "/react-portfolio/static/media/resume.728aab2beb0ee126c8b2.pdf",
     "static/media/password-creator.jpg": "/react-portfolio/static/media/password-creator.b65dec84f5f6b3fd814c.jpg",
+    "static/media/coast-2-coast.jpg": "/react-portfolio/static/media/coast-2-coast.d6810d30a2006c86b3a0.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.68645457.css.map": "/react-portfolio/static/css/main.68645457.css.map",
-    "main.5fef5e22.js.map": "/react-portfolio/static/js/main.5fef5e22.js.map",
+    "main.4e087297.js.map": "/react-portfolio/static/js/main.4e087297.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68645457.css",
-    "static/js/main.5fef5e22.js"
+    "static/js/main.4e087297.js"
   ]
 }
