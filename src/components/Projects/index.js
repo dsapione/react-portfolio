@@ -47,7 +47,7 @@ function Projects() {
 		{
       name: 'Coast2Coast',
 			description: 'screenshot of Coast2Coast website',
-      path: 'coast2coast',
+      path: 'coast-2-coast',
 			link: 'https://coast-2-coast.herokuapp.com'
     }
   ]);
