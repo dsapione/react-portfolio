@@ -36,33 +36,33 @@ function ContactForm() {
     }
   };
 
-  return (
-    <section className='container'>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div className='mb-3'>
-          <label htmlFor="name">Name:</label>
-          <input className='form-control' type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div className='mb-3'>
-          <label htmlFor="email">Email address:</label>
-          <input className='form-control' type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div className='mb-3'>
-          <label htmlFor="message">Message:</label>
-          <textarea className='form-control' name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-				<div className="d-grid gap-2 col-6 mx-auto">
-        	<button className='btn-lg btn-primary' data-testid="button" type="submit">Submit</button>
-				</div>
-      </form>
-    </section>
-  );
+  // return (
+  //   <section className='container'>
+  //     <h1 data-testid="h1tag">Contact me</h1>
+  //     <form id="contact-form" onSubmit={handleSubmit}>
+  //       <div className='mb-3'>
+  //         <label htmlFor="name">Name:</label>
+  //         <input className='form-control' type="text" name="name" defaultValue={name} onBlur={handleChange} />
+  //       </div>
+  //       <div className='mb-3'>
+  //         <label htmlFor="email">Email address:</label>
+  //         <input className='form-control' type="email" name="email" defaultValue={email} onBlur={handleChange} />
+  //       </div>
+  //       <div className='mb-3'>
+  //         <label htmlFor="message">Message:</label>
+  //         <textarea className='form-control' name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+  //       </div>
+  //       {errorMessage && (
+  //         <div>
+  //           <p className="error-text">{errorMessage}</p>
+  //         </div>
+  //       )}
+	// 			<div className="d-grid gap-2 col-6 mx-auto">
+  //       	<button className='btn-lg btn-primary' data-testid="button" type="submit">Submit</button>
+	// 			</div>
+  //     </form>
+  //   </section>
+  // );
 }
 
 export default ContactForm;
